@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+p {
+    animation: translating 10s linear 0s infinite;
+    background: white;
+    color: black;
+    height: 120px;
+    line-height: 60px;
+    margin: 0;
+    position: relative;
+    top: 50px;
+    right: 500px;
+    text-align: center;
+    width: 120px;
+}
+
+@keyframes translating {
+  0%  { transform: translate(0, 0);}
+  20% { transform: translate(1000px, 0);}
+  50% { transform: translate(1000px, 440px);}
+  75% { transform: translate(0, 440px);}
+  100%{ transform: translate(0, 0);}
+}
